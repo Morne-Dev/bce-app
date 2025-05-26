@@ -5,7 +5,6 @@ import Login from './views/Login.vue'
 import Dashboard from './views/Dashboard.vue'
 import Home from './views/Home.vue'
 import PropertyDetails from './views/PropertyDetails.vue'
-import Bookings from './views/Bookings.vue'
 
 const routes = [
   { 

@@ -3,9 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import Login from './views/Login.vue'
 import Dashboard from './views/Dashboard.vue'
-import Home from './views/Home.vue'
-import PropertyDetails from './views/PropertyDetails.vue'
-import Bookings from './views/Bookings.vue'
+import Home from '../views/Home.vue'
 
 const routes = [
   { 

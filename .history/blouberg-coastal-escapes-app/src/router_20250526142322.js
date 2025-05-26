@@ -3,33 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import Login from './views/Login.vue'
 import Dashboard from './views/Dashboard.vue'
-import Home from './views/Home.vue'
-import PropertyDetails from './views/PropertyDetails.vue'
-import Bookings from './views/Bookings.vue'
 
 const routes = [
-  { 
-    path: '/', 
-    component: Home,
-    name: 'Home'
-  },
-  { 
-    path: '/properties/:id', 
-    component: PropertyDetails,
-    name: 'PropertyDetails',
-    props: true
-  },
-  { 
-    path: '/bookings', 
-    component: Bookings,
-    name: 'Bookings'
-  },
-  { 
-    path: '/login', 
-    component: Login 
-  },
-  {
-    path: '/dashboard',
+  { path: '/', redirect: '/login' },
+  { path: '/login', component: Login },
+  { path: '/dashboard', 
     component: Dashboard,
     meta: { requiresAuth: true }
   }
