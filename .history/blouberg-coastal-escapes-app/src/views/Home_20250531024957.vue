@@ -1,0 +1,43 @@
+<template>
+
+    <!-- Fullscreen video background -->
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      class="absolute top-0 left-0 w-full h-full object-cover z-0"
+    >
+      <source
+        src="@/assets/videos/blouberg-airbnb-holiday-property-management-background-video.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <!-- Hero content on top of video -->
+    <div class="relative z-10 h-screen">
+      <HeroSection />
+    </div>
+
+    <!-- Other content sections below hero -->
+    <div class="relative z-10 pt-[100vh]">
+      <IntroSection />
+      <AboutSection />
+      <ServicesSection />
+      <PackagesSection />
+      <TestimonialsSection />
+      <FooterSection />
+    </div>
+
+</template>
+
+<script setup>
+import HeroSection        from '@/components/home/HeroSection.vue'
+import IntroSection       from '@/components/home/IntroSection.vue'
+import AboutSection       from '@/components/home/AboutSection.vue'
+import ServicesSection    from '@/components/home/ServicesSection.vue'
+import PackagesSection    from '@/components/home/PackagesSection.vue'
+import TestimonialsSection from '@/components/home/TestimonialsSection.vue'
+import FooterSection      from '@/components/home/FooterSection.vue'
+</script>
