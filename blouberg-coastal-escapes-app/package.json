@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.2.0",
+    "@mdi/js": "^7.4.47",
+    "@vueuse/motion": "^3.0.3",
     "axios": "^1.9.0",
     "firebase": "^11.8.1",
     "sortablejs": "^1.15.6",
