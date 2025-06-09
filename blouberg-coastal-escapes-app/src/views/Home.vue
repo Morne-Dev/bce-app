@@ -1,12 +1,9 @@
 <template>
-  <div class="relative h-screen w-full overflow-hidden">
-    <!-- Background video using inline style -->
+  <div class="relative w-full min-h-screen overflow-x-hidden">
+    <!-- Background video layer -->
     <div
-      class="absolute top-0 left-0 w-full h-full z-0"
-      style="
-        background: black;
-        z-index: 0;
-      "
+      class="fixed top-0 left-0 w-full h-full z-0"
+      style="background: black; z-index: 0;"
     >
       <video
         autoplay
@@ -14,15 +11,7 @@
         loop
         playsinline
         preload="auto"
-        style="
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          z-index: -1;
-        "
+        class="w-full h-full object-cover"
       >
         <source
           src='@/assets/videos/blouberg-airbnb-holiday-property-management-background-video.mp4'
@@ -31,18 +20,13 @@
       </video>
     </div>
 
-    <!-- Hero content on top of video -->
-    <div class="relative z-10 h-screen flex items-center justify-center">
+    <div class="relative z-10">
       <HeroSection />
-    </div>
-
-    <!-- Other content sections below hero -->
-    <div class="relative z-10 pt-[100vh]">
       <IntroSection />
-      <AboutSection />
-      <ServicesSection />
-      <PackagesSection />
+      <HomeServicesCategorySection />
       <TestimonialsSection />
+      <HomePackagesSection />
+      <AboutSection />
       <FooterSection />
     </div>
   </div>
@@ -52,8 +36,8 @@
 import HeroSection from '@/components/home/HeroSection.vue'
 import IntroSection from '@/components/home/IntroSection.vue'
 import AboutSection from '@/components/home/AboutSection.vue'
-import ServicesSection from '@/components/home/ServicesSection.vue'
-import PackagesSection from '@/components/home/PackagesSection.vue'
+import HomeServicesCategorySection from '@/components/home/HomeServicesCategorySection.vue'
+import HomePackagesSection from '@/components/home/HomePackagesSection.vue'
 import TestimonialsSection from '@/components/home/TestimonialsSection.vue'
 import FooterSection from '@/components/home/FooterSection.vue'
 </script>

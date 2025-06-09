@@ -1,30 +1,69 @@
 <template>
-  
-  <!-- Only content - layout is handled by Home.vue -->
-  <div class="text-center px-4 max-w-4xl mx-auto h-full flex flex-col justify-center items-center">
-    <div class="h-8 w-8 bg-red-500 mb-4"></div>
-    <div class="bg-red-500 text-white p-4">
-      Tailwind CSS is working!
+  <section
+    class="min-h-screen w-full bg-cover bg-center relative flex flex-col items-center justify-center px-4 sm:px-8 pt-[10vh] pb-20 overflow-auto"
+    style="background-image: url('/assets/images/your-bg.jpg');"
+  >
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/20 z-0"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center text-white w-full max-w-4xl">
+      <!-- Logo -->
+      <img
+        v-if="logoUrl"
+        :src="logoUrl"
+        alt="Logo"
+        class="mx-auto mb-10 max-h-[45vh] object-contain logo-animate"
+      />
+
+      <!-- Slogan -->
+      <p
+        class="text-[35px] text-white text-center tracking-wide drop-shadow-md slogan-animate"
+        style="font-family: 'Cormorant Garamond', serif; text-transform: none;"
+      >
+        Helping you find the right fit, every time
+      </p>
     </div>
-
-
-    <h1 class="text-white text-3xl sm:text-5xl lg:text-6xl font-bold mb-4">
-      Helping you find the right fit, every time
-    </h1>
-    <p class="text-white text-base sm:text-lg lg:text-xl mb-8">
-      Professional Holiday Property Management in Cape Town's Coastal Hub Bloubergstrand
-    </p>
-    <button style="background-color:#ef4444; color:black;">
-      Learn More
-    </button>
-  </div>
+  </section>
 </template>
 
 <script setup>
-// no logic here needed
+import logoUrl from '../../assets/images/logo/Blouberg-Coastal-Escapes-Hero-Logo.png'
 </script>
 
+<style scoped>
+/* Logo Animation */
+@keyframes logoFadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-<script setup>
+.logo-animate {
+  animation: logoFadeScale 1.2s ease-out forwards;
+  will-change: opacity, transform;
+}
 
-</script>
+/* Slogan Animation */
+@keyframes sloganSlideIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slogan-animate {
+  animation: sloganSlideIn 1s ease-out 1.4s forwards;
+  opacity: 0; /* Force initial hidden state */
+  will-change: opacity, transform;
+}
+</style>
