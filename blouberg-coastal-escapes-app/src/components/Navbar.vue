@@ -1,5 +1,5 @@
 <template>
-    <nav class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-sm z-20">
+    <nav class="fixed top-0 left-0 w-full bg-black/50 backdrop-blur-sm z-20">
       <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <img src="@/assets/images/logo/Blouberg-Coastal-Escapes-Hero-Logo.png" alt="Logo" class="h-10 w-auto" />
         <ul class="flex gap-6 text-white font-medium">
