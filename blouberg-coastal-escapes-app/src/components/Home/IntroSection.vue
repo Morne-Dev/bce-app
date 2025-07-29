@@ -5,12 +5,19 @@
     ref="introSection"
   >
     <!-- Top Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-transparent z-0"></div>
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-transparent z-0"
+    ></div>
 
     <!-- Top Content -->
-    <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between md:gap-12 px-6 sm:px-8">
+    <div
+      class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between md:gap-12 px-6 sm:px-8"
+    >
       <!-- Left image -->
-      <div class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0 pt-6 animate-item" style="transition-delay: 0.1s;">
+      <div
+        class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0 pt-6 animate-item"
+        style="transition-delay: 0.1s;"
+      >
         <img
           :src="interiorImage"
           alt="Modern vacation rental interior in Blouberg"
@@ -19,25 +26,38 @@
       </div>
 
       <!-- Right content -->
-      <div class="w-full md:w-1/2 max-w-2xl mx-auto text-center md:text-left space-y-6 text-neutral-900">
-        <h1 class="text-4xl sm:text-5xl font-serif font-semibold leading-snug sm:leading-tight animate-item" style="transition-delay: 0.2s;">
-          <span>Professional Holiday Property Management</span><br />
+      <div
+        class="w-full md:w-1/2 max-w-2xl mx-auto text-center md:text-left space-y-6 text-neutral-900"
+      >
+        <h1
+          class="text-4xl sm:text-5xl font-serif font-semibold leading-snug sm:leading-tight animate-item"
+          style="transition-delay: 0.2s;"
+        >
+          Professional Holiday Property Management<br />
           in Cape Town’s Coastal Hub Bloubergstrand
         </h1>
 
-        <p class="text-lg text-neutral-800 font-medium animate-item" style="transition-delay: 0.3s;">
-          Expert Maintenance, Cleaning and Guest Coordination
+        <p
+          class="text-lg text-neutral-700"
+        >
+          Property Management, Cleaning and Guest Coordination
         </p>
 
-        <div class="space-y-4 animate-item text-neutral-700" style="transition-delay: 0.4s;">
+        <div
+          class="space-y-4 animate-item text-neutral-700"
+          style="transition-delay: 0.4s;"
+        >
           <p>
-            Owning a property is a valuable investment, but managing it can be challenging without the right support.
+            Owning a property is a valuable investment, but managing it can be
+            challenging without the right support.
           </p>
           <p>
-            At Blouberg Coastal Escapes, we offer expert holiday property management with 20+ years of experience.
+            At Blouberg Coastal Escapes, we offer expert holiday property
+            management with 20+ years of experience.
           </p>
           <p>
-            From maximizing rental income to ensuring seamless maintenance, cleaning, and guest coordination—we handle it all.
+            From maximizing rental income to ensuring seamless maintenance,
+            cleaning, and guest coordination—we handle it all.
           </p>
         </div>
 
@@ -54,41 +74,77 @@
     </div>
 
     <!-- Features Section -->
-    <div class="relative z-10 mt-20 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-y-16 sm:gap-12 text-center">
-      <div class="animate-item flex flex-col items-center" style="transition-delay: 0.1s;">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Established icon" class="h-10 w-10 text-[#4E9B9B] hover:text-[#2C6E6F] transition-transform duration-300 hover:scale-105" viewBox="0 0 24 24" fill="currentColor">
+    <div
+      class="relative z-10 mt-20 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-y-16 sm:gap-12 text-center"
+    >
+      <div
+        class="animate-item flex flex-col items-center"
+        style="transition-delay: 0.1s;"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Established icon"
+          class="h-10 w-10 text-[#4E9B9B] hover:text-[#2C6E6F] transition-transform duration-300 hover:scale-105"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
           <path :d="mdiDomain" />
         </svg>
         <h3 class="mt-4 text-lg font-semibold text-neutral-800">Established</h3>
         <p class="mt-2 text-sm text-neutral-600">
-          As Blouberg locals, we have in-depth knowledge of the holiday rental market. We tailor property management solutions that ensure your investment is profitable and stress-free.
+          As Blouberg locals, we have in-depth knowledge of the holiday rental
+          market. We tailor property management solutions that ensure your
+          investment is profitable and stress-free.
         </p>
       </div>
 
-      <div class="animate-item flex flex-col items-center" style="transition-delay: 0.2s;">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Reviews icon" class="h-10 w-10 text-[#4E9B9B] hover:text-[#2C6E6F] transition-transform duration-300 hover:scale-105" viewBox="0 0 24 24" fill="currentColor">
+      <div
+        class="animate-item flex flex-col items-center"
+        style="transition-delay: 0.2s;"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Reviews icon"
+          class="h-10 w-10 text-[#4E9B9B] hover:text-[#2C6E6F] transition-transform duration-300 hover:scale-105"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
           <path :d="mdiStarCircle" />
         </svg>
         <h3 class="mt-4 text-lg font-semibold text-neutral-800">Reviews</h3>
         <p class="mt-2 text-sm text-neutral-600">
-          We’re consistently rated above the industry standard, thanks to our guest-focused approach. High reviews mean more bookings, repeat guests, and better returns for your property.
+          We’re consistently rated above the industry standard, thanks to our
+          guest-focused approach. High reviews mean more bookings, repeat
+          guests, and better returns for your property.
         </p>
       </div>
 
-      <div class="animate-item flex flex-col items-center" style="transition-delay: 0.3s;">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Local icon" class="h-10 w-10 text-[#4E9B9B] hover:text-[#2C6E6F] transition-transform duration-300 hover:scale-105" viewBox="0 0 24 24" fill="currentColor">
+      <div
+        class="animate-item flex flex-col items-center"
+        style="transition-delay: 0.3s;"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Local icon"
+          class="h-10 w-10 text-[#4E9B9B] hover:text-[#2C6E6F] transition-transform duration-300 hover:scale-105"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
           <path :d="mdiMapMarkerRadius" />
         </svg>
         <h3 class="mt-4 text-lg font-semibold text-neutral-800">Local</h3>
         <p class="mt-2 text-sm text-neutral-600">
-          We’re local to Blouberg and deeply involved in the community. That insight helps us offer personalized, reliable service for both homeowners and guests.
+          We’re local to Blouberg and deeply involved in the community. That
+          insight helps us offer personalized, reliable service for both
+          homeowners and guests.
         </p>
       </div>
     </div>
 
     <!-- Bottom Fade to White -->
-    <div class="absolute inset-x-0 bottom-0 h-[140vh] bg-gradient-to-t from-white via-[#ffffffee] to-transparent z-0"></div>
-
+    <div
+      class="absolute inset-x-0 bottom-0 h-[140vh] bg-gradient-to-t from-white via-[#ffffffee] to-transparent z-0"
+    ></div>
   </section>
 </template>
 
@@ -114,9 +170,7 @@ onMounted(() => {
   observer = new IntersectionObserver(handleIntersect, options)
   introSection.value
     .querySelectorAll('.animate-item')
-    .forEach(el => {
-      observer.observe(el)
-    })
+    .forEach(el => observer.observe(el))
 })
 
 onBeforeUnmount(() => {
